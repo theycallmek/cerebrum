@@ -7,7 +7,6 @@ if not cli_setup():
     # auto_setup(__file__, logdir=None, devices=["Android:///",], project_root="PUT_ROOT_HERE")
     auto_setup(__file__, logdir=None, devices=["Android:///"])
 
-
 # Init poco
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 
