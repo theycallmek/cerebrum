@@ -18,7 +18,7 @@ def find_promos():
         obj_gen = frozen_poco("com.razer.cortex:id/tv_progress").__iter__()
         for matches in obj_gen:
             if matches.get_text() != r'CLAIMED':
-                label_text = matches.get_text()
+                label_text = matches.get_text().encode("utf-8")
                 print(f'Found {label_text} quest card. Clicking')
                 matches.click()
                 return   # We only need to click one card so return.
@@ -32,6 +32,9 @@ while True:
     with poco.freeze() as frozen_poco:
         
         find_promos()
+        
+        if frozen_poco("com.razer.cortex:id/tv_tooltip_body").exists():
+            frozen_poco("com.razer.cortex:id/tv_tooltip_body").click()
         
         # Open daily quest cards 1st step
         if frozen_poco("com.razer.cortex:id/open_button").exists():
