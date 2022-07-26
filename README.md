@@ -14,7 +14,7 @@ The cortex is the outer layer of the cerebrum. Which plays an important role in 
 - Closes review nag screen
 
 
-## 🖥️ Usage 🖥
+## 🖥️ Usage
 
 - Connect USB and enable USB debugging on Android device.
 - Open a cmd prompt and make sure you see your device listed when entering the command 'adb devices'. You can 'adb kill-server' then 'adb start-server' if you dont see your device.
