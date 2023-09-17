@@ -1,7 +1,7 @@
 
 # 🧠 cerebrum 
 
-Cerebrum is an AI for collecting Razer Silver from the app Razer Cortex Games. It currently semi-automates watching ads for silver, and collects daily quests.
+Cerebrum is an script for collecting Razer Silver from the app Razer Cortex Games. It currently semi-automates watching ads for silver, and collects daily quests.
 
 The cortex is the outer layer of the cerebrum. Which plays an important role in conciousness. Fitting for an "AI".
 
